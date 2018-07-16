@@ -1,81 +1,63 @@
-\documentclass[12pt]{article}
+\documentclass[12pt, a4paper, titlepage]{report}
+\usepackage{graphicx, amsmath, amsfonts, listings, amssymb, mathrsfs, color, fancyhdr, geometry, hyperref}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{wrapfig}
 \graphicspath{ {images/} }
+
+\geometry{
+a4paper,bindingoffset=0.2in,
+            left=1in,right=1in,top=1in,bottom=1in,
+            footskip=.25in
+ }
+\definecolor{mygreen}{RGB}{28,172,0}
+\definecolor{mylilas}{RGB}{170,55,241}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Ashish T., Nischal L.S., Sagar D.}
+\lhead{Election Portal}
+\fancyfoot[C]{Page \thepage}
+\renewcommand{\headrulewidth}{2pt}
+
 \begin{document}
 
+
 \begin{titlepage}
-
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
-
-\center % Center everything on the page
- 
-%----------------------------------------------------------------------------------------
-%   HEADING SECTIONS
-%----------------------------------------------------------------------------------------
-
-\textsc{\LARGE Nepal College of Information and Technology}\\[1.5cm] % Name of your university/college
-\textsc{\Large Web-Design Competition}\\[0.5cm] % Major heading such as course name
-\textsc{\large 2018}\\[0.5cm] % Minor heading such as course title
-
-%----------------------------------------------------------------------------------------
-%   TITLE SECTION
-%----------------------------------------------------------------------------------------
-
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\center
+\begin{center}
+	\includegraphics[scale=0.4]{ncit}
+\end{center}
+\vspace{0.75cm}
+ \textsc{\Large \textbf{Nepal College of Information Technology}}\\
+{\large \textbf{Web Design Competition} \par}
+\vfill
 \HRule \\[0.4cm]
-{ \huge \bfseries Election Portal}\\[0.4cm] % Title of your document
+\includegraphics[scale=0.4]{logo.png}\\[1cm] 
+{ \huge \bfseries Election Portal}\\
 \textsc{\large Discover everything election!}
 \HRule \\[1.5cm]
- 
-%----------------------------------------------------------------------------------------
-%   AUTHOR SECTION
-%----------------------------------------------------------------------------------------
-
-
-% If you don't want a supervisor, uncomment the two lines below and remove the section above
-\Large \emph{Team Members:}\\
-\textsc{Ashish Tiwari}\\
-\textsc{Nischal Lal Shrestha}\\
-\textsc{Sagar Devkota}\\
-
-%----------------------------------------------------------------------------------------
-%   DATE SECTION
-%----------------------------------------------------------------------------------------
-
-{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
-
-%----------------------------------------------------------------------------------------
-%   LOGO SECTION
-%----------------------------------------------------------------------------------------
-
-\includegraphics[scale=0.4]{logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
- 
-%----------------------------------------------------------------------------------------
-
-\vfill % Fill the rest of the page with whitespace
-
+\vfill
+{\large Team members}\\
+{\Large \textbf{Ashish Tiwari} \par}
+{\Large \textbf{Nischal Lal Shrestha} \par}
+{\Large \textbf{Sagar Devkota} \par}
+\vfill
+{\large \today}\\[1cm] 
 \end{titlepage}
 
 
 \begin{abstract}
-The purpose of Election Portal is to digitize election and election-related activities in Nepal.
-Election Portal offers a web application to store candidates information, election constituency details,
-latest election results. The problem statement relies on understanding a
-way to store all the datasets in the database, solving the complexity involved within and finding an interface to provide all these datasets to the visitors without a pain. Election Portal will provide oppurtunity to individual volunteers to update the election datasets, election result in real time. Each web page of the Election Portal will be equipped with either a search form or a filter form to enhance user's ability to get information very quickly.
+The purpose of Election Portal is to digitize election and election-related activities in Nepal. Election Portal offers a web application to store candidates information, election constituency details, latest election results. The problem statement relies on understanding a way to store all the dataset in the database, solving the complexity involved within and finding an interface to provide all these dataset to the visitors without a pain. Election Portal will provide opportunity to individual volunteers to update the election datasets election result in real time. Each web page of the Election Portal will be equipped with either a search form or a filter form to enhance user's ability to get information very quickly.
 \end{abstract}
 
 \section{Introduction}
-
 Election Portal is a web application for individual visitors, journalists, students to get election results and other election-related activities at a single place. Election Portal will provide oppurtunity to individual volunteers to update the election datasets, election result in a real time.
 
 \section{Problem Statement}
 The problem statement for Election Portal is based on understanding and developing a effective way to store all the datasets of election-related activites in a profound way, solving all the complexity involved with the datasets. It also relies on building a interface to filter and search the election datasets through the database in a effective manner.
+
 \newpage
-
-
 \section{UML Design}
 \subsection{Use Case Diagram}
 \includegraphics[scale=0.6]{election_portal_use_case_diagram.png}\\
