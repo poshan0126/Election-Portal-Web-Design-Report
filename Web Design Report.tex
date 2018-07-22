@@ -4,6 +4,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{wrapfig}
 \graphicspath{ {images/} }
+\usepackage[toc,page]{appendix}
 
 \geometry{
 a4paper,bindingoffset=0.2in,
@@ -52,6 +53,17 @@ a4paper,bindingoffset=0.2in,
 \addcontentsline{toc}{section}{Abstract}
 \thispagestyle{empty}
 The purpose of Election Portal is to digitize election and election-related activities in Nepal. Election Portal, therefore, offers a web application which stores candidate information, election constituency details, latest election results, and various other information directly related to election and enables the clients to fetch those data efficiently. The problem statement relies on understanding proper way to store all those dataset in the database, solving the complexity involved within and finding an appropriate interface to provide all these dataset to the visitors. Election Portal also provides opportunity to individual volunteers who are authorized to update election result dataset of a particular constituency in real-time. Each web page of the Election Portal is equipped with either a search form or a filter form to enhance user's ability to get information very quickly.
+\\
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small    
+  \textbf{\textit{Keywords---}} #1
+}
+
+\hspace{10pt}
+\keywords{Datasets, Django, Election, Portal, Web Application}
+
 \newpage
 
 \tableofcontents
@@ -66,9 +78,10 @@ Election Portal is a web application for individual visitors, journalists, stude
 \section{Problem Statement}
 The problem statement for Election Portal is based on understanding and developing a effective way to store all the datasets of election-related activities in a profound way, solving all the complexity involved with the datasets. It also relies on building a interface to filter and search the election datasets through the database in a effective manner.
 
+\newpage
 \section{UML Design}
 \subsection{Use Case Diagram}
-\begin{figure}
+\begin{figure}[ht]
 	\includegraphics[scale=0.6]{election_portal_use_case_diagram.png}
 	\caption{Use Case Diagram of Election Portal}
 \end{figure}
@@ -93,18 +106,21 @@ Based on the above use case diagram, the following group of activities have been
 \item Super Admin can approve new volunteer, limit access to volunteer and delete existing volunteer.
 \end{enumerate}
 
+\newpage	
 \subsection{UML Class Diagram}
 \begin{center}
-\begin{figure}
-	\includegraphics[scale=0.5]{political_party.png}
-	\caption{Class Diagram of Political Party}
+\begin{figure}[ht]
+	\includegraphics[scale=0.45]{Class_Diagram_for_Election_Portal_1.png}
+	\caption{Class Diagram of Nominee}
 \end{figure}
 \end{center}
 
 \begin{center}
-\includegraphics[scale=0.5]{Political_division.png}
+\begin{figure}
+\includegraphics[scale=0.5]{Class_Diagram_for_Election_Portal_2.png}
+	\caption{Class Diagram for Article and Volunteer}
+\end{figure}
 \end{center}
-
 
 \section{Framework of the Development}
 \subsection{Logical Architecture Diagram}
@@ -124,6 +140,7 @@ Business Logic Layer is a bridge between models and templates. It provides appro
 
 \begin{enumerate}
 \item Django\\
+We had used Django 2.0.7 to handle backend of Election Portal.
 Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source
 
 \item 
@@ -131,15 +148,48 @@ U.S. Web Design System\\
 A design system for the federal government. The design standards by US Web Design System are backed by user research.
 
 \item SQLite\\
-SQLite is a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine. SQLite is the most used database engine in the world.
+SQLite is already installed in Django. So we did not install it from outside. SQLite is a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine. SQLite is the most used database engine in the world.
 
 \item JQuery\\
-JQuery is a fast and concise JavaScript Library created by John Resig in 2006 with a nice motto: Write less, do more. jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
+We had used JQuery 3.3.1 in out project. JQuery is a fast and concise JavaScript Library created by John Resig in 2006 with a nice motto: Write less, do more. jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
 
 \item HTML and CSS\\
 HTML, HyperText Markup Language, gives content structure and meaning by defining that content as, for example, headings, paragraphs, or images. CSS, or Cascading Style Sheets, is a presentation language created to style the appearance of content—using, for example, fonts or colors.
 \end{enumerate}
 \newpage
+
+    
+\section{Graphical User Interface of the System}
+Election Portal has a GUI so that visitors can easily browse the portal with the least effort. Every page has a header and footer. The header consists of the Navigation menu so that visitors can navigate throughout the webpage without being lost.
+\subsection{Homepage}
+\begin{center}
+\includegraphics[scale=0.3]{home.png}\\
+\end{center}
+Besides header and footer, Homepage of Election Portal has a search form which allows visitors to search election datasets without pain. The homepage has a map, so any users can filter the datasets via district.
+
+\subsection{List of Political Party}
+All the political parties registered will be listed here along with their party image. Given figure shows same image because we don't have update the database with real datas.\\
+\begin{center}
+\includegraphics[scale=0.3]{List_of_Political_Party.png}\\
+\end{center}
+
+\subsection{Details of Political Party}
+\begin{center}
+\includegraphics[scale=0.35]{Details_of_Political_Party.png}
+\end{center}
+
+\subsection{Details of Nominee}
+\begin{center}
+\includegraphics[scale=0.35]{Details_of_a_nominee.png}
+\end{center}
+
+
+\subsection{Details of Constituency}
+\begin{center}
+\includegraphics[scale=0.35]{Details_of_Constituency.png}
+\end{center}
+
+\begin{appendices}
 \section{Installation}
 \subsection{Installing Python}
 
@@ -202,36 +252,7 @@ The above steps may require an active Internet Connection.
 \end{enumerate}  
     
 \newpage
-    
-\section{Graphical User Interface of the System}
-Election Portal has a GUI so that visitors can easily browse the portal with the least effort. Every page has a header and footer. The header consists of the Navigation menu so that visitors can navigate throughout the webpage without being lost.
-\subsection{Homepage}
-\begin{center}
-\includegraphics[scale=0.3]{home.png}\\
-\end{center}
-Besides header and footer, Homepage of Election Portal has a search form which allows visitors to search election datasets without pain. The homepage has a map, so any users can filter the datasets via district.
-
-\subsection{List of Political Party}
-All the political parties registered will be listed here along with their party image. Given figure shows same image because we don't have update the database with real datas.\\
-\begin{center}
-\includegraphics[scale=0.3]{List_of_Political_Party.png}\\
-\end{center}
-
-\subsection{Details of Political Party}
-\begin{center}
-\includegraphics[scale=0.35]{Details_of_Political_Party.png}
-\end{center}
-
-\subsection{Details of Nominee}
-\begin{center}
-\includegraphics[scale=0.35]{Details_of_a_nominee.png}
-\end{center}
-
-
-\subsection{Details of Constituency}
-\begin{center}
-\includegraphics[scale=0.35]{Details_of_Constituency.png}
-\end{center}
+\end{appendices}
 
 
 

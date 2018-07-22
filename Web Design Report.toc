@@ -1,0 +1,25 @@
+\select@language {english}
+\contentsline {section}{Abstract}{i}{section*.1}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Problem Statement}{1}{section.2}
+\contentsline {section}{\numberline {3}UML Design}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Use Case Diagram}{2}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Visitor}{2}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Volunteer}{3}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Super Admin}{3}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Server}{3}{subsubsection.3.1.4}
+\contentsline {subsection}{\numberline {3.2}UML Class Diagram}{4}{subsection.3.2}
+\contentsline {section}{\numberline {4}Framework of the Development}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}Logical Architecture Diagram}{5}{subsection.4.1}
+\contentsline {section}{\numberline {5}Tools and Technology Used}{7}{section.5}
+\contentsline {section}{\numberline {6}Graphical User Interface of the System}{8}{section.6}
+\contentsline {subsection}{\numberline {6.1}Homepage}{8}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}List of Political Party}{8}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Details of Political Party}{9}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Details of Nominee}{9}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Details of Constituency}{9}{subsection.6.5}
+\contentsline {section}{Appendices}{10}{section*.3}
+\contentsline {section}{\numberline {A}Installation}{10}{Appendix.1.A}
+\contentsline {subsection}{\numberline {A.1}Installing Python}{10}{subsection.1.A.1}
+\contentsline {subsection}{\numberline {A.2}Creating an isolated Python environment}{10}{subsection.1.A.2}
+\contentsline {subsection}{\numberline {A.3}Setting up Election Portal on Virtual Environment}{10}{subsection.1.A.3}
