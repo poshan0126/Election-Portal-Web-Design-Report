@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.5)  22 JUL 2018 22:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.7.5)  22 JUL 2018 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -639,8 +639,8 @@ Package rerunfilecheck Warning: File `"Web Design Report".out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `"Web Design Report".out':
-(rerunfilecheck)             Before: 657C53C8F6B101A5835C21A031D3BEE9;1758
-(rerunfilecheck)             After:  44A8EBA54AE96D68CB40046BC7E6B3CD;1758.
+(rerunfilecheck)             Before: 44A8EBA54AE96D68CB40046BC7E6B3CD;1758
+(rerunfilecheck)             After:  197F71F7A419B4DA96E112D11A298809;1758.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -663,7 +663,7 @@ dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmtt10.pfb>
-Output written on "Web Design Report.pdf" (15 pages, 1147054 bytes).
+Output written on "Web Design Report.pdf" (15 pages, 1146306 bytes).
 PDF statistics:
  323 PDF objects out of 1000 (max. 8388607)
  275 compressed objects within 3 object streams
